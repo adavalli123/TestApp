@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "testuberpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adavalli123/TestUberPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "00ec01805966ab49be42218e5decee0dcf074102"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -14,6 +14,7 @@
 		DD2AB1682A04481F00842714 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2AB1672A04481F00842714 /* TestAppTests.swift */; };
 		DD2AB1722A04481F00842714 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2AB1712A04481F00842714 /* TestAppUITests.swift */; };
 		DD2AB1742A04481F00842714 /* TestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2AB1732A04481F00842714 /* TestAppUITestsLaunchTests.swift */; };
+		DD9266522A0C05830032E321 /* TestUberPackage in Frameworks */ = {isa = PBXBuildFile; productRef = DD9266512A0C05830032E321 /* TestUberPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		DD2AB16D2A04481F00842714 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AB1712A04481F00842714 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		DD2AB1732A04481F00842714 /* TestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DD92664C2A0B163D0032E321 /* TestUberPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TestUberPackage; path = ../TestUberPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9266522A0C05830032E321 /* TestUberPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +77,6 @@
 		DD2AB1492A04481E00842714 = {
 			isa = PBXGroup;
 			children = (
-				DD92664B2A0B163D0032E321 /* Packages */,
 				DD2AB1542A04481E00842714 /* TestApp */,
 				DD2AB1662A04481F00842714 /* TestAppTests */,
 				DD2AB1702A04481F00842714 /* TestAppUITests */,
@@ -139,14 +139,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD92664B2A0B163D0032E321 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				DD92664C2A0B163D0032E321 /* TestUberPackage */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +156,7 @@
 			);
 			name = TestApp;
 			packageProductDependencies = (
+				DD9266512A0C05830032E321 /* TestUberPackage */,
 			);
 			productName = TestApp;
 			productReference = DD2AB1522A04481E00842714 /* TestApp.app */;
@@ -238,6 +231,7 @@
 			);
 			mainGroup = DD2AB1492A04481E00842714;
 			packageReferences = (
+				DD9266502A0C05830032E321 /* XCRemoteSwiftPackageReference "TestUberPackage" */,
 			);
 			productRefGroup = DD2AB1532A04481E00842714 /* Products */;
 			projectDirPath = "";
@@ -644,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD9266502A0C05830032E321 /* XCRemoteSwiftPackageReference "TestUberPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adavalli123/TestUberPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD9266512A0C05830032E321 /* TestUberPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD9266502A0C05830032E321 /* XCRemoteSwiftPackageReference "TestUberPackage" */;
+			productName = TestUberPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD2AB14A2A04481E00842714 /* Project object */;
 }
